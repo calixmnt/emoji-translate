@@ -37,3 +37,12 @@ input, textarea {
     outline: initial; 
     font: inherit;
 }
+
+/* UTILITIES */
+.u-bold {
+    font-weight: 700;
+}
+
+.u-underline {
+    text-decoration: underline;
+}
