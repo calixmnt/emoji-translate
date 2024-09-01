@@ -1,0 +1,39 @@
+:root {
+    --primary-color : #811ff1;
+    --primary-color-dark : #6308b9;
+    --gray : #dee3e9;
+    --white : #fff;
+
+}
+
+/* RESET */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: initial;
+}
+
+button {
+    font: inherit;
+    border: initial;
+    outline: initial;
+    background-color: initial;
+}
+
+input, textarea {
+    border: initial;
+    outline: initial; 
+    font: inherit;
+}
