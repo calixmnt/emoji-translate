@@ -91,6 +91,7 @@
   left: 0;
   right: 0;
   /* background: #f1f6f8; */
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
   display: flex;
   column-gap: 12px;
 }
@@ -98,7 +99,12 @@
 .command__button {
   padding: 20px 25px;
   cursor: pointer;
-  border-left: 1px solid rgba(0, 0, 0, 0.08);
+  /* border-left: 1px solid rgba(0, 0, 0, 0.08); */
+  transition: all .2s;
+}
+
+.command__button:hover{
+  background: #f1f6f8;
 }
 
 .textarea {

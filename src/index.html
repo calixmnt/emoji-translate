@@ -13,7 +13,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./index.css">
-    <script type="module" src="./index.js"></script>
+    <script src="../dist/bundle.js" defer></script>
     <title>Text to Emoji</title>
 </head>
 
@@ -30,10 +30,10 @@
     <main class="main">
         <div class="container">
             <div class="entry">
-                <textarea class="textarea" spellcheck="false" placeholder="Enter your text"></textarea>
+                <textarea class="textarea entry__textarea" spellcheck="false" placeholder="Enter your text"></textarea>
             </div>
             <section class="results">
-                <textarea class="textarea" readonly></textarea>
+                <textarea class="textarea results__textarea" readonly></textarea>
                 <div class="command">
                     <button class="command__button"><i class="fa-regular fa-copy command__icon"></i></button>
                     <button class="command__button"><i class="fa-solid fa-vials command__icon"></i></button>
