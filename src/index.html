@@ -13,7 +13,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./index.css">
-    <script src="../dist/bundle.js" defer></script>
+    <script src="/bundle.js" defer></script>
     <title>Text to Emoji</title>
 </head>
 
@@ -33,7 +33,8 @@
                 <textarea class="textarea entry__textarea" spellcheck="false" placeholder="Enter your text"></textarea>
             </div>
             <section class="results">
-                <textarea class="textarea results__textarea" readonly></textarea>
+                <div class="results-box">
+                </div>
                 <div class="command">
                     <button class="command__button"><i class="fa-regular fa-copy command__icon"></i></button>
                     <button class="command__button"><i class="fa-solid fa-vials command__icon"></i></button>
@@ -42,7 +43,8 @@
         </div>
     </main>
     <footer class="footer">
-        <small class="copyright">&copy; Copyright by <a class="u-underline u-bold" target="_blank" href="https://github.com/calixmnt">Calixmnt</a>. All rights reserved.</small>
+        <small class="copyright">&copy; Copyright by <a class="u-underline u-bold" target="_blank"
+                href="https://github.com/calixmnt">Calixmnt</a>. All rights reserved.</small>
         <small>2024</small>
     </footer>
 </body>

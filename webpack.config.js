@@ -5,31 +5,30 @@ module.exports = {
   entry: './src/index.js',
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'dist'), //le repertoire de destination du bundle
     publicPath: '/'
   },
   devServer: {
     static: {
-      directory: path.join(__dirname, 'dist'),
+      directory: path.resolve(__dirname, 'src'), //le repertoire du fichier html
     },
     compress: true,
     port: 9000,
     open: true,
     hot: true,
-    historyApiFallback: true,
   },
   module: {
-    // rules: [
-    //   {
-    //     test: /\.js$/,
-    //     exclude: /node_modules/,
-    //     use: {
-    //       loader: 'babel-loader',
-    //       options: {
-    //         presets: ['@babel/preset-env']
-    //       }
-    //     }
-    //   }
-    // ]
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env']
+          }
+        }
+      }
+    ]
   }
 };
