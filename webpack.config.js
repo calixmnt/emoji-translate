@@ -13,7 +13,7 @@ module.exports = (env, argv) => {
     output: {
       filename: isProduction ? "bundle.[contenthash].js" : "bundle.js", // Hash en production pour le cache busting
       path: path.resolve(__dirname, "dist"),
-      publicPath: "./",
+      publicPath: "/",
     },
     devServer: {
       static: {
